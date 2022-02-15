@@ -1,0 +1,23 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap/scss/bootstrap";
+
+.container {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+i.fa-solid {
+  color: #35858B;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: white;
+}

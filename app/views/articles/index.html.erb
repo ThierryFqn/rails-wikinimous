@@ -1,0 +1,16 @@
+ <header class='px-4 py-5 my-5 text-center'>
+  <h1>Wikinonimous</h1>
+  <div class='btn btn-outline-primary'><%= link_to "Add an article", new_article_path %></div>
+</header>
+<ul class="list-group">
+<% @articles.each do |article| %>
+    <li class="list-group-item">
+      <h2><%= article.title %></h2>
+      <p><%= article.content %></p>
+      <%= link_to article_path(article),
+      method: :delete,
+      data: {confirm: "Are you sure ?"} do %>
+        <i class="fa-solid fa-trash-can"></i>
+      <% end %>
+    </li>
+  <% end %>
